@@ -1,0 +1,12 @@
+{
+  "name": "atrio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Demo de desarrollo inmobiliario: el edificio se construye con el scroll (scroll-linked animation con líneas de tiempo nativas), unidades con plano y simulador de cuotas ajustadas por CAC. HTML, CSS y JavaScript sin dependencias.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edificio Ceibo · Atrio Desarrollos</title>
+    <meta name="description" content="Departamentos en pozo en Pichincha, Rosario: mirá cómo se construye el edificio mientras bajás, elegí tu unidad y simulá las cuotas. Sitio de demostración." />
+    <meta name="theme-color" content="#1b1d1f" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <!-- Vista previa al compartir el link (WhatsApp, redes) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Edificio Ceibo" />
+    <meta property="og:title" content="Edificio Ceibo · Atrio Desarrollos" />
+    <meta property="og:description" content="Mirá cómo se construye el edificio mientras bajás, elegí tu unidad y simulá las cuotas. Sitio de demostración." />
+    <meta property="og:url" content="https://laura-m-stack.github.io/atrio/" />
+    <meta property="og:image" content="https://laura-moyano-web.pages.dev/og/atrio.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Edificio Ceibo: captura de la demo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://laura-moyano-web.pages.dev/og/atrio.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/main.js"></script>
+    <!-- Franja "Demo hecha por Laura Moyano": un solo script compartido por todas las demos -->
+    <script src="https://laura-moyano-web.pages.dev/demo/firma.js" data-demo="Edificio Ceibo" defer></script>
+  </head>
+  <body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <p class="aviso-demo">Sitio de demostración: Atrio Desarrollos y el Edificio Ceibo son ficticios, igual que los precios.</p>
+    <header class="cabecera">
+      <a class="marca" href="#inicio" aria-label="Atrio Desarrollos, inicio">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12h-6v-7H9v7z" fill="currentColor" /></svg>
+        Atrio
+      </a>
+      <nav class="menu" aria-label="Secciones">
+        <a href="#unidades">Unidades</a>
+        <a href="#financiacion">Financiación</a>
+        <a href="#avance">Avance de obra</a>
+        <a class="menu__cta" href="#contacto">Consultar</a>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero" id="inicio" aria-label="El edificio">
+        <div class="hero__pista" data-pista>
+          <div class="hero__escena" data-escena>
+            <div class="hero__dibujo" data-edificio></div>
+            <ol class="capitulos">
+              <li class="capitulo" data-capitulo>
+                <p class="sobre">Edificio Ceibo · Pichincha, Rosario</p>
+                <h1>Antes de ser tu casa, fue un plano.</h1>
+                <p>Siete pisos de departamentos de 1, 2 y 3 ambientes, a dos cuadras del río. Bajá y miralo construirse.</p>
+                <a class="boton" href="#unidades">Ver unidades</a>
+              </li>
+              <li class="capitulo" data-capitulo>
+                <p class="sobre">01 · Estructura</p>
+                <h2>Hormigón armado, piso por piso.</h2>
+                <dl class="cifras">
+                  <div><dt>Plantas</dt><dd>8</dd></div>
+                  <div><dt>Construidos</dt><dd>2.140 m²</dd></div>
+                  <div><dt>Unidades</dt><dd>21</dd></div>
+                </dl>
+              </li>
+              <li class="capitulo" data-capitulo>
+                <p class="sobre">02 · Fachada</p>
+                <h2>Ventanales de piso a techo, balcones al norte.</h2>
+                <p>Doble vidriado hermético en todas las aberturas y barandas de madera que el sol de la tarde vuelve cálidas.</p>
+              </li>
+              <li class="capitulo" data-capitulo>
+                <p class="sobre">03 · Terraza</p>
+                <h2>Arriba, todo el edificio comparte la vista.</h2>
+                <p>Pileta, solárium, pérgola con parrilla y una huerta para los vecinos.</p>
+              </li>
+              <li class="capitulo" data-capitulo>
+                <p class="sobre">04 · Por dentro</p>
+                <h2>Elegí tu unidad, piso por piso.</h2>
+                <p>Así es el quinto piso: un 3 ambientes y un 2 ambientes al frente, con balcón, y un monoambiente al este.</p>
+                <a class="boton" href="#unidades">Ver unidades disponibles</a>
+              </li>
+            </ol>
+            <div class="riel" aria-hidden="true"><span class="riel__lleno" data-riel></span></div>
+            <p class="hero__bajar" aria-hidden="true">Bajá para ver cómo se construye</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion" id="unidades" aria-labelledby="t-unidades">
+        <div class="contenedor">
+          <p class="sobre">Unidades</p>
+          <h2 id="t-unidades" class="titulo revelar">21 departamentos, del primero al séptimo piso.</h2>
+          <form class="filtros" data-filtros>
+            <fieldset class="segmentos">
+              <legend>Ambientes</legend>
+              <label><input type="radio" name="ambientes" value="todos" checked /><span>Todos</span></label>
+              <label><input type="radio" name="ambientes" value="1" /><span>Mono</span></label>
+              <label><input type="radio" name="ambientes" value="2" /><span>2 amb</span></label>
+              <label><input type="radio" name="ambientes" value="3" /><span>3 amb</span></label>
+            </fieldset>
+            <label class="check"><input type="checkbox" name="disponibles" /> Solo disponibles</label>
+            <label class="campo campo--corto">
+              <span>Ordenar por</span>
+              <select name="orden">
+                <option value="piso">Piso</option>
+                <option value="precio">Precio</option>
+              </select>
+            </label>
+          </form>
+          <p class="resumen" data-resumen aria-live="polite"></p>
+          <div class="unidades">
+            <ul class="grilla" data-grilla role="list"></ul>
+            <aside class="detalle" data-detalle aria-live="polite">
+              <p class="detalle__vacio">Tocá una unidad para ver su plano, la superficie y el precio.</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="seccion seccion--oscura" id="financiacion" aria-labelledby="t-fin">
+        <div class="contenedor dos-col">
+          <div>
+            <p class="sobre">Financiación</p>
+            <h2 id="t-fin" class="titulo revelar">Anticipo en dólares, el resto en cuotas en pesos.</h2>
+            <p class="bajada">Las cuotas se ajustan cada mes por el índice CAC, que publica la Cámara Argentina de la Construcción. Como nadie sabe cuánto va a subir, cargá una estimación: el resultado es orientativo.</p>
+          </div>
+          <form class="simulador" data-simulador novalidate>
+            <label class="campo">
+              <span>Unidad</span>
+              <select name="unidad" data-select-unidad></select>
+              <small class="error" data-error="precio" data-campo="unidad"></small>
+            </label>
+            <label class="campo">
+              <span>Anticipo <output data-anticipo-valor>40%</output></span>
+              <input type="range" name="anticipo" min="30" max="100" step="5" value="40" />
+              <small class="error" data-error="anticipo" data-campo="anticipo"></small>
+            </label>
+            <div class="fila">
+              <label class="campo">
+                <span>Cuotas</span>
+                <select name="cuotas"></select>
+                <small class="error" data-error="cuotas" data-campo="cuotas"></small>
+              </label>
+              <label class="campo">
+                <span>Dólar (ARS)</span>
+                <input name="tc" inputmode="decimal" value="1500" autocomplete="off" />
+                <small class="error" data-error="tipoCambio" data-campo="tc"></small>
+              </label>
+              <label class="campo">
+                <span>CAC mensual estimado (%)</span>
+                <input name="cac" inputmode="decimal" value="2" autocomplete="off" />
+                <small class="error" data-error="cac" data-campo="cac"></small>
+              </label>
+            </div>
+            <div data-resultado aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+
+      <section class="seccion" id="avance" aria-labelledby="t-avance">
+        <div class="contenedor dos-col">
+          <div>
+            <p class="sobre">Avance de obra</p>
+            <h2 id="t-avance" class="titulo revelar">Entrega estimada en <span data-entrega>diciembre de 2028</span>.</h2>
+            <p class="bajada">Cada mes publicamos fotos y el porcentaje de cada etapa. Así sabés en qué se usa tu cuota.</p>
+          </div>
+          <ol class="avance" data-avance></ol>
+        </div>
+      </section>
+
+      <section class="seccion seccion--clara" id="ubicacion" aria-labelledby="t-ubi">
+        <div class="contenedor dos-col">
+          <div>
+            <p class="sobre">Ubicación</p>
+            <h2 id="t-ubi" class="titulo revelar">Pichincha: bares, el río a dos cuadras y el centro a diez minutos.</h2>
+          </div>
+          <ul class="amenities">
+            <li>Terraza con pileta y solárium</li>
+            <li>Huerta compartida</li>
+            <li>Bicicletero cubierto</li>
+            <li>Laundry</li>
+            <li>Cocheras en subsuelo, opcionales</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="seccion" id="contacto" aria-labelledby="t-contacto">
+        <div class="contenedor dos-col">
+          <div>
+            <p class="sobre">Contacto</p>
+            <h2 id="t-contacto" class="titulo revelar">Te respondemos por WhatsApp.</h2>
+            <p class="bajada">El mensaje ya lleva la unidad y la simulación, así no tenés que explicar nada dos veces.</p>
+          </div>
+          <form class="contacto" data-contacto>
+            <label class="campo">
+              <span>Tu nombre</span>
+              <input name="nombre" autocomplete="name" />
+            </label>
+            <label class="campo">
+              <span>Unidad</span>
+              <select name="unidad" data-select-unidad></select>
+            </label>
+            <p class="vista-mensaje" data-vista-mensaje></p>
+            <button class="boton" type="submit">Enviar por WhatsApp</button>
+            <a class="enlace" data-whatsapp href="https://wa.me/" target="_blank" rel="noopener">o abrí WhatsApp con este mensaje</a>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor pie__fila">
+        <p><strong>Atrio Desarrollos</strong> · negocio ficticio, sitio de demostración.</p>
+        <p>Diseño y desarrollo: <a href="https://laura-moyano-web.pages.dev/">Laura Moyano</a> · <span data-anio>2026</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
